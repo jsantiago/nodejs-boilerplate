@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+        <link href="/css/{{name}}-{{version}}.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        {% block nav %}{% include "nav.html" ignore missing %}{% endblock %}
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+        <script src="/js/{{name}}-{{version}}.min.js"></script>
+    </body>
+</html>

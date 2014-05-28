@@ -1,0 +1,6 @@
+.vagrant/
+bower_components/
+node_modules/
+dist/
+src/js/generated.js
+config.json
